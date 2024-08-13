@@ -129,11 +129,12 @@
                 } else if (percentage < 0) {
                     percentage = 0;
                 } else if (percentage > 100) {
-                    percentage <= 100;
+                    percentage = 100;
                 }
                 
                 // Update the box's height based on the percentage value
                 displayChart.style.height = (percentage*2) + '%';    
+                displayChart.style.maxHeight = 100 + '%';   
             }
         </script>
 </body>
